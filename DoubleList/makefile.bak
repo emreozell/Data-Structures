@@ -1,0 +1,11 @@
+hepsi : derle calistir
+
+derle:
+	
+	g++ -I ./include/ -o ./lib/Queue.o -c ./src/Queue.cpp
+	g++ -I ./include/ -o ./lib/avl_tree.o -c ./src/avl_tree.cpp
+	g++ -I ./include/ -o ./lib/File.o -c ./src/File.cpp
+	g++ -I ./include/ -o ./bin/test.exe ./lib/Queue.o ./lib/avl_tree.o ./lib/File.o ./src/main.cpp
+	
+calistir:
+	./bin/test.exe

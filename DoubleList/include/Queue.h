@@ -1,0 +1,36 @@
+
+
+#ifndef QUEUE_H
+#define QUEUE_H
+
+
+#include<iostream>
+#include<cstdio>
+#include<sstream>
+#include<algorithm>
+#include <fstream>
+#define pow2(n) (1 << (n))
+using namespace std;
+
+struct Node {
+
+    Node* next;
+    int x;
+    int y;
+    int z;
+    int uzaklikOrjin;
+    Node(int, int, int);
+    
+};
+
+class Queue {
+
+public:
+	Node* front, * rear = NULL;
+	int toplamUzunluk;
+	void enQueue(int, int, int);
+	Queue();
+    
+};
+
+#endif
